@@ -1,12 +1,12 @@
 aiohttp!=3.7.*
 aiohttp-security
 aiohttp-session
-asyncio_glib
+asyncio_glib #no supported version :(
 bitarray  # TODO: remove
 dasbus
 evdev
-hid-tools>=0.7
-mypy==1.13.0
+hid-tools==0.5
+mypy==1.14.0 #might need to be downgraded 
 PyGObject
 pyudev
 watchfiles
