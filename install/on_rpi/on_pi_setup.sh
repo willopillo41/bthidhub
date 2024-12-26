@@ -20,8 +20,8 @@ systemctl --user stop obex
 systemctl --user disable obex
 systemctl --user mask obex
 
-sudo apt-get install libcairo2-dev libdbus-1-dev libgirepository1.0-dev libglib2.0-dev libudev-dev libical-dev libreadline-dev autoconf automake libtool python3-pip -y
-sudo pip3 install -r $HOME/bthidhub/requirements.txt
+sudo apt-get install libcairo2-dev libdbus-1-dev libgirepository1.0-dev libglib2.0-dev libudev-dev libical-dev libreadline-dev autoconf automake libtool python3-pip -y #this might need to be --break-ified as well 
+sudo pip3 install -r $HOME/bthidhub/requirements.txt --break-system-packages #not ideal but whatever, figure this out later 
 
 cd $HOME/bthidhub/install/on_rpi
 git clone https://github.com/Dreamsorcerer/bluez.git
